@@ -1,0 +1,143 @@
+{% load static %}
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sunshine SDA</title>
+      <!-- CSS -->
+      <link href="css/custom.css" rel="stylesheet">
+
+      <!-- Font Awesome -->
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+       {% block links %}
+
+       {% endblock links %}
+    </head>
+  
+ 
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-logo" href="#" src="img/logo.ng"></a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+
+        <a class="nav-link" href="{% url 'sunshine:home' %}">HOME<span class="sr-only">(current)</span></a>
+      </li>
+      <li>
+        <a class="nav-link" href="{% url 'sunshine:ministries' %}">MINISTRIES</a>
+      </li>
+      <li>
+        <a class="nav-link" href="{% url 'sunshine:resources' %}">RESOURCES</a>
+      </li>
+      <li>
+        <a class="nav-link" href="{% url 'sunshine:connect' %}">CONNECT</a>
+      </li>
+  </div>
+		</button>
+	</div>
+</nav>
+    
+
+  
+</nav>
+</div>
+
+{% block content %}
+{% endblock %}
+
+<!-- FOOTER -->
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4 ">
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Contact us</h5>
+        <p>Here you can use rows and columns to organize your footer content.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam earum ad optio vero quia. Quis nam blanditiis dignissimos sapiente dolor veritatis non nihil, saepe praesentium ratione facere eum illum? Eligendi!</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+      
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">connect with us</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">facebook</a>
+          </li>
+          <li>
+            <a href="#!">twitter</a>
+          </li>
+          <li>
+            <a href="#!">Instagram</a>
+          </li>
+        </ul>
+        
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Hours of service</h5>
+        6-7pm<br>
+        ec etc
+
+        
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+</footer>
+<!-- Footer -->
+<footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; sunshine s.d.a &middot; <a href="#"></a></p>
+  </footer>
+</main>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+
+
+    
+
+    <!-- Optional JavaScript -->
+  
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    {% block script%}
+    
+    {% endblock script %}
+  </body>
+</html>
